@@ -1,1 +1,277 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Result Management System</title>
+    <style>
+        .student-button {
+            padding: 10px 50px;
+            background-color: #132440;
+            color: #fff;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            margin-right: 50px;
+        }
+
+        .student-button:hover {
+            padding: 10px 50px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            opacity: 0.7;
+        }
+
+        .admin-button {
+            padding: 10px 50px;
+            background-color: #eae0cf;
+            color: #132440;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            transition: 0.1s ease-in;
+            margin-left: 50px;
+        }
+
+        .admin-button:hover {
+            padding: 10px 50px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            opacity: 0.7;
+        }
+
+        .student-theme {
+            background-image: url("img/blue bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .login-icon {
+            font-size: 120px;
+            color: white;
+            padding: 50px 10px;
+        }
+
+        .vresult-box {
+            border-radius: 15px;
+            background-color: #2D3C59;
+        }
+
+        .login-button {
+            padding: 35px 20px;
+            border-radius: 10px;
+            width: 60%;
+            background-color: #132440;
+            color: #fff;
+            outline: none;
+            border: none;
+            transition: 0.1s ease-in;
+        }
+
+        .login-button:hover {
+            padding: 35px 50px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: #EAE0CF;
+            color: #132440;
+        }
+
+        .div {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .div::before,
+        .div::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #fff;
+        }
+
+        .div span {
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 500;
+            font-size: 40px;
+        }
+
+        .graph-bg {
+            background-image: url('../img/graph2.jpg');
+            height: 120px;
+            width: 120px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box {
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        .graph {
+            width: clamp(40px, 8vw, 100px);
+            align-items: center;
+        }
+
+        .lock {
+            font-size: clamp(3rem, 5vw, 6rem);
+            color: #132440;
+        }
+
+        .blue-theme {
+            height: 25vw;
+            width: 100vw;
+            overflow: none;
+        }
+
+        @media (max-width:1024px) {
+            .blue-theme {
+                height: 35vw;
+                width: 100vw;
+                overflow: none;
+            }
+        }
+
+        @media (min-width:2560px) {
+            .container-80 {
+                width: 80vw;
+                margin: auto;
+            }
+
+            .hero-content {
+                max-width: 12000px;
+                /* bigger for large screens */
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+                color: #E1E1E1;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex justify-content-between ">
+            <div class=" d-flex navlogo"><img src="img/schl logo2.png" alt="College logo"></div>
+            <div class="p-1">
+                <ul>
+                    <li>
+                        <a href="#intro">Home</a>
+                    </li>
+                    <li>
+                        <a href="studentlogin.html">Student Login</a>
+                    </li>
+                    <li>
+                        <a href="adminlogin.html">Admin Login</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="">
+        <div class="container-fluid hero">
+            <div class="position-relative">
+                <div class="hero-content container position-absolute start-50 top-15 translate-middle">
+                    <h3>Welcome to</h3>
+                    <h1>SHRI AATAM VALLABH JAIN P.G. COLLEGE</h1>
+                    <h2>Result Management System</h2>
+                    <p class="text-primary">Access your academic result easily and securely</p>
+
+                    <br>
+
+                    <div class="buttons">
+                        <button class="student-button"><i
+                                class="fa-solid fa-square-poll-horizontal letter-spacing"></i>ViewResult</button>
+                        <button class="admin-button"><i class="fa-solid fa-user"></i>Teacher Login</button>
+                    </div>
+                </div>
+
+                <img src="img/blue bg.png" class="w-100 blue-theme" alt="Hero background">
+            </div>
+        </div>
+    </section>
+
+    <section id="class-theme">
+        <img src="img/school bg.png" class="w-100" alt="Campus background">
+    </section>
+
+    <section id="login">
+        <div class="container-50">
+            <div class="col-12 bg-2 d-flex vresult-box mt-4 mb-4">
+                <div class="col-3 ms-2"><i class="fa-solid fa-square-poll-horizontal fa-bounce login-icon"></i></div>
+                <div class="col-9 text-center text-light">
+                    <h2>VIEW YOUR RESULT</h2>
+                    <br>
+                    <button class="login-button" onclick="window.location.href='studentlogin.html'">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container mt-5">
+            <div class="text-center div"> <span class="lobster-regular">Our Features</span></div>
+            <div class="d-flex col-12 pt-5">
+                <div class="col-4 bg-light text-primary m-1 p-3 border-radius text-center"><img src="img/graph.jpg"
+                        class="graph pb-1" alt="Graph" /><br /> Easy Result Access
+                </div>
+                <div class="col-4 bg-light text-primary m-1 p-4 border-radius text-center"><br /><i
+                        class="fa-solid fa-table-cells-column-lock lock"></i><br /><br />
+                    Secure Data</div>
+                <div class="col-4 bg-light text-primary m-1 p-3 border-radius text-center"><img src="img/meter.png"
+                        class=" graph pt-1" alt="Performance meter" /><br /><br />Fast <br />
+                    Performance</div>
+                <div class="col-4 bg-light text-primary m-1 p-4 border-radius text-center"><br /><i
+                        class="fa-solid fa-display lock"></i><br /><br />
+                    User friendly</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="school image">
+        <img src="img/school image.png" class="w-100 mt-5 blue-theme" alt="School image">
+    </section>
+
+    <section id="contact">
+        <div class="bg-1 p-5">
+            <div class="container-50">
+                <div class="col-12 text-light">
+                    <div class="text-center div"> <span class="lobster-regular">Contact</span></div>
+                    <div class="text-center">
+                        <ul>
+                            <li class="p-2"><i class="fa-solid fa-envelope"></i>&nbsp; -&nbsp; avj12@rediffmail.com</li>
+                            <li class="p-2"><i class="fa-solid fa-phone"></i> &nbsp;- &nbsp;01547960825</li>
+                            <li class="p-2"><i class="fa-solid fa-location-dot"></i>&nbsp; -&nbsp; HanumangarhRd,Sudama
+                                Nagar,Ramdev Colony,
+                                <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sri
+                                Ganganagar, Rajasthan 335001
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
