@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,68 @@
     <title>STUDENT LOGIN</title>
     <style>
         body {
-            background-image: url('img/studenttheme2.jpg');
+            background-image: url('img/studenttheme.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
+        }
+
+        .student-container {
+            width: 70vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .left-login {
+            width: 100%;
+            margin-top: 80px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            text-align: center;
+            height: 80vh;
+            background-color: none;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 
         }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .right-login {
+            background-color: #94b4c1;
+            height: 80vh;
+            width: 100%;
+            margin-top: 80px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+
     </style>
 </head>
-<body style="background-image:img/studenttheme2jpg;">
-   <div class="container-50">
-    <div class="col-12 d-flex bg-1">
-        <div class="col-6"></div>
-        <div class="col-6"></div>
+
+<body>
+    <div class="student-container">
+        <div class="col-12 d-flex">
+            <!------------------------------------- img --------------------------------------------------------------->
+            <div class="col-6  left-login">
+                <img src="img/studentimg.png" alt="">
+            </div>
+            <!------------------------------------- register --------------------------------------------------------------->
+            <div class="col-6 right-login">
+                <div class="view-result">
+                    View result
+                </div>
+            </div>
+        </div>
     </div>
    </div>
 </body>
+
 </html>
