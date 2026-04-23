@@ -62,6 +62,7 @@
             font-weight: 800;
             margin: 20px;
             color: rgb(241, 243, 245);
+            text-align: center;
         }
 
         .input-name {
@@ -101,7 +102,7 @@
             border-radius: 30px;
             background-color: #5F7489B8;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 45px;
             color: aliceblue;
             font-size: medium;
             cursor: pointer;
@@ -123,6 +124,32 @@
             color: #2f4f6f;
         }
 
+        .login-button {
+             width: 100%;
+            padding: 15px 0;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background-color: #4e6a92;
+            text-align: center;
+            margin-top: 30px;
+            color: aliceblue;
+            font-size: medium;
+            cursor: pointer;
+            letter-spacing: 4px;
+        }
+
+        
+        a{
+            text-decoration: none;
+            color: #2f4f6f;
+        }
+
+        .back-home {
+            text-align: center;
+            margin: 30px;
+        }
+
     </style>
 </head>
 
@@ -138,15 +165,18 @@
             <div class="col-6 right-login">
                 <div class="p-5">
                     <!------------------------------------- heading --------------------------------------------------------------->
+                   
                     <div class="heading">
-                        View your Result
+                        View Result
                     </div>
                     <br>
                     <!------------------------------------- input --------------------------------------------------------------->
+                   
                     <i class="fa-solid fa-address-card roll-icon"></i>
                     <input class="input-name" type="number" placeholder="ENTER ROLL NUMBER">
 
                     <!------------------------------------- select --------------------------------------------------------------->
+                    
                     <i class="fa-solid fa-chalkboard-user class-icon"></i>
                     <select name="select-class" id="">
                         <option value="" disabled selected>SELECT CLASS</option>
@@ -155,6 +185,16 @@
                         <option value="">SELECT CLASS</option>
                     </select>
 
+                    <!------------------------------------- button --------------------------------------------------------------->
+                    
+                    <button class="login-button">LOGIN</button>
+                    
+                    <!------------------------------------- button --------------------------------------------------------------->
+               
+                    <div class="back-home">
+                        <a href=""> Back to home</a>
+                    </div>
+               
                 </div>
 
             </div>
