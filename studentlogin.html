@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>STUDENT LOGIN</title>
     <style>
         body {
@@ -18,18 +22,21 @@
         .student-container {
             width: 70vw;
             margin: auto;
-            height: 70vh;
+            height: 50vh;
+            position: relative;
         }
 
         .left-login {
             width: 100%;
-            margin-top: 80px;
+            margin-top: 125px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             text-align: center;
-            height: 80vh;
+            height: 75vh;
             background-color: none;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            justify-content: center;
+            align-items: center;
 
         }
 
@@ -42,20 +49,86 @@
 
         .right-login {
             background-color: #94b4c1;
-            height: 80vh;
+            height: 75vh;
             width: 100%;
-            margin-top: 80px;
+            margin-top: 125px;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
+        .heading {
+            font-size: 40px;
+            font-weight: 800;
+            margin: 20px;
+            color: rgb(241, 243, 245);
+        }
+
+        .input-name {
+            width: 100%;
+            padding: 20px 0;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background-color: #5F7489B8;
+            text-align: center;
+            margin-top: 20px;
+            color: aliceblue;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        .input-name::placeholder {
+            color: aliceblue;
+        }
+
+        .school-logo {
+            width: 80px;
+            height: auto;
+            border-radius: 50px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        select {
+            width: 100%;
+            padding: 20px 0;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            background-color: #5F7489B8;
+            text-align: center;
+            margin-top: 50px;
+            color: aliceblue;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        .roll-icon {
+            position: absolute;
+            padding: 30px 15px;
+            font-size: xx-large;
+            justify-content: center;
+            color: #2f4f6f;
+        }
+
+        .class-icon{
+             position: absolute;
+            padding: 60px 15px;
+            font-size: xx-large;
+            justify-content: center;
+            color: #2f4f6f;
+        }
 
     </style>
 </head>
 
 <body>
     <div class="student-container">
+        <img src="img/schl logo.jpg" class="school-logo" alt="">
         <div class="col-12 d-flex">
             <!------------------------------------- img --------------------------------------------------------------->
             <div class="col-6  left-login">
@@ -63,13 +136,31 @@
             </div>
             <!------------------------------------- register --------------------------------------------------------------->
             <div class="col-6 right-login">
-                <div class="view-result">
-                    View result
+                <div class="p-5">
+                    <!------------------------------------- heading --------------------------------------------------------------->
+                    <div class="heading">
+                        View your Result
+                    </div>
+                    <br>
+                    <!------------------------------------- input --------------------------------------------------------------->
+                    <i class="fa-solid fa-address-card roll-icon"></i>
+                    <input class="input-name" type="number" placeholder="ENTER ROLL NUMBER">
+
+                    <!------------------------------------- select --------------------------------------------------------------->
+                    <i class="fa-solid fa-chalkboard-user class-icon"></i>
+                    <select name="select-class" id="">
+                        <option value="" disabled selected>SELECT CLASS</option>
+                        <option value="">SELECT CLASS</option>
+                        <option value="">SELECT CLASS</option>
+                        <option value="">SELECT CLASS</option>
+                    </select>
+
                 </div>
+
             </div>
         </div>
     </div>
-   </div>
+    </div>
 </body>
 
 </html>
