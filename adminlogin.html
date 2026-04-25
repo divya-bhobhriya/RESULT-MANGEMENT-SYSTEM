@@ -12,7 +12,7 @@
     <title>STUDENT LOGIN</title>
     <style>
         body {
-            background-image: url('img/studenttheme.jpg');
+            background-image: url('img/adminlogintheme.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -27,43 +27,42 @@
         }
 
         .left-login {
+            background-color: #24344a;
+            height: 75vh;
             width: 100%;
             margin-top: 125px;
+            box-shadow: 0 20px 40px rgba(37, 118, 189, 0.15);
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            text-align: center;
-            height: 75vh;
-            background-color: none;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-
+            animation: slide 2s;
         }
 
         img {
             height: 100%;
             width: 100%;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
         }
 
         .right-login {
-            background-color: #94b4c1;
-            height: 75vh;
             width: 100%;
             margin-top: 125px;
+            text-align: center;
+            height: 75vh;
+            background-color: #4e6a92;
+            box-shadow: 0 20px 40px rgba(18, 30, 93, 0.15);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            animation: slide 2s;
+
         }
 
         @keyframes slide {
             from {
                 opacity: 0;
-                transform:translateX(-500px);
+                transform: translateX(500px);
             }
+
             to {
                 opacity: 1;
                 transform: rotateX(0);
@@ -86,7 +85,7 @@
             border-radius: 30px;
             background-color: #5F7489B8;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
             color: aliceblue;
             font-size: medium;
             cursor: pointer;
@@ -123,27 +122,27 @@
 
         .roll-icon {
             position: absolute;
-            padding: 30px 15px;
+            padding: 40px 15px;
             font-size: xx-large;
             justify-content: center;
-            color: #2f4f6f;
+            color: #94B4C1;
         }
 
-        .class-icon{
-             position: absolute;
-            padding: 60px 15px;
+        .class-icon {
+            position: absolute;
+            padding: 40px 15px;
             font-size: xx-large;
             justify-content: center;
-            color: #2f4f6f;
+            color: #94B4C1;
         }
 
         .login-button {
-             width: 100%;
+            width: 100%;
             padding: 15px 0;
             outline: none;
             border: none;
             border-radius: 30px;
-            background-color: #4e6a92;
+            background-color: #94B4C1;
             text-align: center;
             margin-top: 30px;
             color: aliceblue;
@@ -156,8 +155,8 @@
             opacity: 0.7;
         }
 
-        
-        a{
+
+        a {
             text-decoration: none;
             color: #2f4f6f;
         }
@@ -165,8 +164,8 @@
         .back-home {
             text-align: center;
             margin: 30px;
+            color: #94B4C1;
         }
-
     </style>
 </head>
 
@@ -176,48 +175,46 @@
         <div class="col-12 d-flex">
             <!------------------------------------- img --------------------------------------------------------------->
             <div class="col-6  left-login">
-                <img src="img/studentimg.png" alt="">
-            </div>
-            <!------------------------------------- register --------------------------------------------------------------->
-            <div class="col-6 right-login">
                 <div class="p-5">
                     <!------------------------------------- heading --------------------------------------------------------------->
-                   
+
                     <div class="heading">
-                        View Result
+                        Login As Admin
                     </div>
                     <br>
                     <!------------------------------------- input --------------------------------------------------------------->
-                   
-                    <i class="fa-solid fa-address-card roll-icon"></i>
-                    <input class="input-name" type="number" placeholder="ENTER ROLL NUMBER">
+
+                    <i class="fa-solid fa-envelope roll-icon"></i>
+                    <input class="input-name" placeholder="johndoe">
 
                     <!------------------------------------- select --------------------------------------------------------------->
-                    
-                    <i class="fa-solid fa-chalkboard-user class-icon"></i>
-                    <select name="select-class" id="">
-                        <option value="" disabled selected>SELECT CLASS</option>
-                    </select>
+
+                    <i class="fa-solid fa-lock class-icon"></i>
+                    <input class="input-name" type="password" placeholder="password" >
 
                     <!------------------------------------- button --------------------------------------------------------------->
-                    
-                    <button onclick="openpage('student.html')" class="login-button">LOGIN</button>
-                    
+
+                    <button onclick="openpage('admin.html')" class="login-button">LOGIN</button>
+
                     <!------------------------------------- button --------------------------------------------------------------->
-               
+
                     <div class="back-home">
-                        <a href="index.html"> Back to home??</a>
+                        <a style="color: #94B4C1;" href="index.html"> Back to home??</a>
                     </div>
-               
+
                 </div>
+            </div>
+            <!------------------------------------- register --------------------------------------------------------------->
+            <div class="col-6 right-login">
+
+                <img src="img/adminimg.png" alt="">
 
             </div>
         </div>
     </div>
     </div>
 
-        <script src="script.js"></script>
-
+    <script src="script.js"></script>
 
 </body>
 
