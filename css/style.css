@@ -17,6 +17,7 @@ body {
     width: 60vw;
     margin: auto;
 }
+
 .container-70 {
     width: 70vw;
     margin: auto;
@@ -915,7 +916,8 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 1200px;   /* bigger for large screens */
+    max-width: 1200px;
+    /* bigger for large screens */
     width: 90%;
     margin: auto;
     padding: 20px;
@@ -949,4 +951,66 @@ section {
 
 body {
     gap: 0;
+}
+
+
+
+.r-font {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+aside {
+    width: 16vw;
+    height: 100vh;
+    background-color: #F7F8F0;
+    position: fixed;
+}
+
+main {
+    width:84vw;
+    background-color: #9ED3DC;
+    margin-left: 16vw;
+    height: 100vh;
+}
+
+.admin-icon {
+    font-size: 120px;
+    margin-top: 10%;
+    color: rgb(102, 100, 100);
+}
+
+.icon-font {
+    color: black;
+    margin: 2%;
+}
+
+.control {
+    color: cornflowerblue;
+}
+
+.overview {
+    color: rgb(24, 23, 23);
+    font-size: larger;
+    margin: 4%;
+}
+
+.dash-btn {
+    padding:10px;
+    width: 85%;
+    margin: 20px;
+    font-size: large;
+    border: none;
+    outline: none;
+    text-align:center;
+    color: rgb(88, 87, 87);
+    background-color:#e2e4e5;
+}
+
+.dash-btn:hover {
+    border-radius: 15px;
+    color:rgb(255, 255, 255);
+    background-color:#B1DCE7;
 }
