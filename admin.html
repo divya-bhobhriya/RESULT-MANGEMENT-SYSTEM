@@ -10,11 +10,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ADMIN PAGE</title>
     <style>
-       
+
     </style>
 </head>
 
 <body>
+
+    <!----------------------------------------------- NAV -------------------------------------------------------------------->
 
     <header>
         <nav style="background-color: #355872;" class="justify-content-between">
@@ -24,54 +26,118 @@
             </div>
             <div class="">
                 <ul>
-                    <li><button onclick="openpage('index.html')" class="log-out-btn"><i class="fa-solid fa-right-from-bracket pe-2"></i>Log out</button></li>
+                    <li><button onclick="openpage('index.html')" class="log-out-btn"><i
+                                class="fa-solid fa-right-from-bracket pe-2"></i>Log out</button></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-
-    <!----------------------------------------------- ASIDE -------------------------------------------------------------------->
-    <aside>
-        <div class="col-12">
-
-<!---------------------------- ICON --------------------------------------->
-
-<div class="col-12 text-center">
-    <i class="fa-solid fa-user-tie admin-icon"></i>
-    <h3 class="icon-font">ADMIN</h3>
-    <span class="control">Control</span>
-</div>
-
-<!---------------------------- OVERVIEW --------------------------------------->
-
-<div class="col-12 mt-3">
-    <div class="r-font overview">OVERVIEW</div>
-    <div class="col-12 text-center">
-        <button class="dash-btn"><i class="fa-solid fa-gauge-high dash-icon pe-2"></i>Dashboard</button>
-    </div>
-</div>
-
-<!---------------------------- MANAGEMENT --------------------------------------->
-
-<div class="col-12">
-    <div class="r-font overview">MANAGEMENT</div>
-        <button class="dash-btn"><i class="fa-solid fa-chalkboard pe-2"></i>Classes</button>
-        <button class="dash-btn"><i class="fa-solid fa-book pe-2"></i>Subjects</button>
-        <button class="dash-btn"><i class="fa-solid fa-user-graduate pe-2"></i>Students</button>
-        <button class="dash-btn"><i class="fa-solid fa-newspaper pe-2"></i>Results</button>
-    </div>
+    <section class="d-flex">
 
 
-        </div>
-    </aside>
+        <!----------------------------------------------- ASIDE -------------------------------------------------------------------->
+        <aside>
+            <div class="col-12">
+
+                <!---------------------------- ICON --------------------------------------->
+
+                <div class="col-12 text-center">
+                    <i class="fa-solid fa-user-tie admin-icon"></i>
+                    <h3 class="icon-font">ADMIN</h3>
+                    <span class="control">Control</span>
+                </div>
+
+                <!---------------------------- OVERVIEW --------------------------------------->
+
+                <div class="col-12 mt-3">
+                    <div class="r-font overview">OVERVIEW</div>
+                    <div class="col-12 text-center">
+                        <button class="dash-btn"><i class="fa-solid fa-gauge-high dash-icon pe-2"></i>Dashboard</button>
+                    </div>
+                </div>
+
+                <!---------------------------- MANAGEMENT --------------------------------------->
+
+                <div class="col-12">
+                    <div class="r-font overview">MANAGEMENT</div>
+                    <button class="dash-btn"><i class="fa-solid fa-chalkboard pe-2"></i>Classes</button>
+                    <button class="dash-btn"><i class="fa-solid fa-book pe-2"></i>Subjects</button>
+                    <button class="dash-btn"><i class="fa-solid fa-user-graduate pe-2"></i>Students</button>
+                    <button class="dash-btn"><i class="fa-solid fa-newspaper pe-2"></i>Results</button>
+                </div>
+
+
+            </div>
+        </aside>
 
 
 
 
-    <!----------------------------------------------- MAIN -------------------------------------------------------------------->
-    <main></main>
+        <!----------------------------------------------- MAIN -------------------------------------------------------------------->
+        <main>
 
+            <!----------------------------------------------- DASHBOARD -------------------------------------------------------------------->
+            
+            <section id="dashboard" class="dashboard r-font">
+
+                <div class="dash-head"><i class="fa-solid fa-gauge-high dash-sec-icon pe-1"></i>Dashboard</div>
+                <div class="span-sec">Quick overview of college data.</div>
+
+                <div class="col-12">
+                    
+                        <div class="col-3 p-2 d-flex">
+                            <div class="col-3 box1 d-flex me-1">
+                                <div class="col-10 me-3">
+                                    Registered Students
+                                    <br>
+                                    <h1>20000</h1>
+                                </div>
+                                <div class="col-2 border-radius1 p-4" style="background-color: #ffffff40">
+                                    <i class="fa-solid fa-users dash-box-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-3 box2 d-flex me-1">
+                                <div class="col-10 me-3">
+                                    Subject Listed
+                                    <br>
+                                    <h2 id="subject-length">15454</h2>
+                                </div>
+                                <div class="col-3 border-radius1 p-4" style="background-color: #ffffff40;">
+                                    <i class="fa-solid fa-book-open dash-box-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-3 box3 d-flex me-1">
+                                <div class="col-10 me-3">
+                                    Classes
+                                    <br>
+                                    <h2 id="class-length"></h2>
+                                </div>
+                                <div class="col-3 border-radius1 p-4" style="background-color: #ffffff40">
+                                    <i class="fa-solid fa-school dash-box-icon"></i>
+                                </div>
+                            </div>
+                            <div class="col-3 box4 d-flex me-1">
+                                <div class="col-10 me-3">
+                                    Results declared
+                                    <br>
+                                    <h2 id="result-length"></h2>
+                                </div>
+                                <div class="col-3 border-radius1 p-4" style="background-color: #ffffff40">
+                                    <i class="fa-solid fa-file-pen dash-box-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </section>
     <script src="script.js"></script>
 
 </body>

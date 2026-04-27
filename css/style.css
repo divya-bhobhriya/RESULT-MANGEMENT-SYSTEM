@@ -1013,7 +1013,8 @@ main {
 .dash-btn:hover {
     border-radius: 15px;
     color:rgb(255, 255, 255);
-    background-color:#B1DCE7;
+    /* background-color:#B1DCE7; */
+    background-color: #4e6a92;
 }
 
 .schl-logo-adm{
@@ -1040,3 +1041,89 @@ main {
     color: aliceblue;
 }
 
+.dashboard {
+    width: 100%;
+    height: 100%;
+    background-color: #BBD1F5EB;
+    padding-top: 70px;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.dash-head{
+    font-size:40px;
+    padding-left: 10px;
+    /* padding-top: 70px; */
+    /* padding-left: 10px; */
+}
+
+.dash-sec-icon {
+    font-size: 50px;
+    color: darkcyan;
+    padding: 10px;
+}
+
+.span-sec{
+    color: rgb(99, 95, 95);
+    margin-left: 10px;
+    font-size: larger;
+    padding-left: 10px;
+}
+
+.std-box {
+    color:#CD2C58;
+    padding: 500px;
+    width: 100%;
+}
+
+
+.box1 {
+    padding: 20px 50px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #00a86b, #8ee4a3);
+    border-radius: 20px;
+    color: rgb(241, 239, 239);
+}
+
+.box2 {
+    padding: 20px 50px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    border-radius: 20px;
+    color: rgb(241, 239, 239);
+}
+
+.box3 {
+    padding: 20px 50px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    border-radius: 20px;
+    color: rgb(241, 239, 239);
+}
+
+.box4 {
+    padding: 20px 50px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #dc2626, #f87171);
+    border-radius: 20px;
+    color: rgb(241, 239, 239);
+}
+
+.box5 {
+    padding: 15px 40px;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(135deg, #2563eb, #0ea5a4, #22c55e);
+    border-radius: 20px;
+    color: rgb(241, 239, 239);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.dash-box-icon {
+    font-size: 30px;
+}
