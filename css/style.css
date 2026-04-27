@@ -978,7 +978,7 @@ main {
 
 .admin-icon {
     font-size: 120px;
-    margin-top: 10%;
+    margin-top: 30%;
     color: rgb(102, 100, 100);
 }
 
@@ -1000,13 +1000,14 @@ main {
 .dash-btn {
     padding:10px;
     width: 85%;
-    margin: 20px;
+    margin: 15px;
     font-size: large;
     border: none;
     outline: none;
     text-align:center;
     color: rgb(88, 87, 87);
     background-color:#e2e4e5;
+    cursor: pointer;
 }
 
 .dash-btn:hover {
@@ -1014,3 +1015,28 @@ main {
     color:rgb(255, 255, 255);
     background-color:#B1DCE7;
 }
+
+.schl-logo-adm{
+    width:40px;
+    align-items: flex-start;
+    border-radius: 50px;
+}
+
+.log-out-btn{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.log-out-btn:hover {
+    opacity: 0.5;
+}
+
+.nav-head {
+    margin: 10px;
+    font-size: larger;
+    color: aliceblue;
+}
+
